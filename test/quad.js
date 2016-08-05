@@ -102,7 +102,7 @@ function runTests (DataFactory) {
         var graph = DataFactory.namedNode('http://example.org/graph')
         var quad = DataFactory.quad(subject, predicate, object, graph)
 
-        assert.equal(quad.toCanonical(), '<http://example.org/subject> <http://example.org/predicate> <http://example.org/object> <http://example.org/graph>')
+        assert.equal(quad.toCanonical(), '<http://example.org/subject> <http://example.org/predicate> <http://example.org/object> <http://example.org/graph> .')
       })
 
       it('should skip the graph if it\'s a DefaultGraph', function () {
@@ -111,7 +111,7 @@ function runTests (DataFactory) {
         var object = DataFactory.namedNode('http://example.org/object')
         var quad = DataFactory.quad(subject, predicate, object)
 
-        assert.equal(quad.toCanonical(), '<http://example.org/subject> <http://example.org/predicate> <http://example.org/object>')
+        assert.equal(quad.toCanonical(), '<http://example.org/subject> <http://example.org/predicate> <http://example.org/object> .')
       })
     })
   })
