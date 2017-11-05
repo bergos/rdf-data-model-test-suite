@@ -1,3 +1,7 @@
+# deprecated
+
+The test suite is now part of the [rdf-data-model](https://github.com/rdf-ext/rdf-data-model/) package.
+
 # rdf-data-model-test-suite
 
 Test suite for the [RDFJS Data Model](https://github.com/rdfjs/representation-task-force/).
